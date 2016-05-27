@@ -1,0 +1,46 @@
+schema {
+  query: Query
+}
+
+type Article implements Node {
+  id: ID!
+  title: String
+  author: String
+  text: String
+  description: String
+  link: String
+  mainImage: String
+  pubdate: String
+}
+
+type ArticleConnection {
+  pageInfo: PageInfo!
+  edges: [ArticleEdge]
+}
+
+type ArticleEdge {
+  node: Article
+  cursor: String!
+}
+
+type Newsfeed implements Node {
+  id: ID!
+  articles(after: String, first: Int, before: String, last: Int): ArticleConnection
+}
+
+interface Node {
+  id: ID!
+}
+
+type PageInfo {
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+  startCursor: String
+  endCursor: String
+}
+
+type Query {
+  node(id: ID!): Node
+  newsfeed: Newsfeed
+  article: Article
+}
