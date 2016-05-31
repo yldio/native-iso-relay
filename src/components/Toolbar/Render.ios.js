@@ -9,10 +9,12 @@ export default function render(options = {}) {
   const { onClick, styles } = options;
 
   return(
-    <View style={[styles.toolbar, styles.toolbarIos]}>
-      <TouchableHighlight onPress={() => { onClick(); }}>
+    <View style={styles.toolbarIos}>
+      <TouchableHighlight
+        underlayColor={'#FFF'}
+        onPress={() => { onClick(); }}>
         <Image
-          source={require('../../../public/img/yld_logo_white_ios.png')}
+          source={require('../../../public/img/yld_logo_blue.png')}
           style={styles.logo}
         />
       </TouchableHighlight>

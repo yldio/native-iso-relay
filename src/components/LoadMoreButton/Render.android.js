@@ -9,13 +9,15 @@ export default function render(options = {}) {
   const { styles, onLoadMore } = options;
 
   return(
-    <TouchableNativeFeedback
-      onPress={() => onLoadMore()}
-      style={styles.loadMore}>
-      <View style={styles.loadMore}>
-        <Text style={styles.whiteColor}>Load more</Text>
-      </View>
-    </TouchableNativeFeedback>
+    <View style={[styles.loadMoreDiv]}>
+      <TouchableNativeFeedback
+        onPress={() => onLoadMore()}
+        style={styles.loadMore}>
+        <View style={styles.loadMore}>
+          <Text style={styles.whiteColor}>LOAD MORE</Text>
+        </View>
+      </TouchableNativeFeedback>
+    </View>
   );
 }
 

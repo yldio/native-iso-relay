@@ -10,6 +10,10 @@ export const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'stretch',
   },
+  loadMoreDiv: {
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   loadMore: {
     backgroundColor: '#82438B',
     marginTop: 10,
@@ -66,14 +70,16 @@ export const styles = StyleSheet.create({
   },
   logo: {
     alignSelf: 'flex-start',
+    marginLeft: 10,
     width: 65,
     height: 45,
   },
-  toolbar: {
+  toolbarAd: {
     backgroundColor: '#2F3849',
     height: 66,
   },
   toolbarIos: {
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
     borderColor: '#00BAD9',
     borderBottomWidth: 5,
     flexDirection: 'row',
