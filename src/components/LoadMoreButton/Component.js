@@ -16,9 +16,9 @@ class LoadMoreButton extends React.Component {
 
   render() {
     const options = {
-      styles,
-      onLoadMore,
-    } = this.props;
+      styles: this.props.styles,
+      onLoadMore: this.props.onLoadMore,
+    };
 
     return Render.bind(this)(options);
   }

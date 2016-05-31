@@ -23,9 +23,9 @@ class Article extends React.Component {
 
   render() {
     const options = {
-      styles,
-      article,
-    } = this.props;
+      styles: this.props.styles,
+      article: this.props.article,
+    };
 
     return Render.bind(this)(options);
   }

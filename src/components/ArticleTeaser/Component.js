@@ -21,10 +21,10 @@ class ArticleTeaser extends React.Component {
 
   render() {
     const options = {
-      styles,
-      article,
-      onPress,
-    } = this.props;
+      styles: this.props.styles,
+      article: this.props.article,
+      onPress: this.props.onPress,
+    };
 
     return Render.bind(this)(options);
   }
