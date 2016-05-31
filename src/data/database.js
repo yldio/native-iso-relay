@@ -5,7 +5,7 @@ export class Article {}
 const newsfeed = new Newsfeed();
 newsfeed.id = 1;
 
-const defaultThumb = 'http://blog.yld.io/content/images/2016/04/cc-social--1--3.png';
+const defaultThumb = '/img/possum.jpg';
 
 const articlesJson = require('../../content/posts.json');
 const articles = articlesJson.map(item => {
