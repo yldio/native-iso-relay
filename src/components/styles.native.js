@@ -87,8 +87,4 @@ export const styles = StyleSheet.create({
     height: 71,
     alignItems: 'center',
   },
-  loadMoreDiv: {
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
 });

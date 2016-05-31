@@ -11,8 +11,8 @@ export default function render(options = {}) {
   return(
     <View style={styles.toolbarIos}>
       <TouchableHighlight
-        underlayColor={'#FFF'}
-        onPress={() => { onClick(); }}>
+        onPress={() => { onClick(); }}
+        underlayColor={'#FFF'}>
         <Image
           source={require('../../../public/img/yld_logo_blue.png')}
           style={styles.logo}
