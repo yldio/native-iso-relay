@@ -1,8 +1,11 @@
 import Relay from 'react-relay';
 import React from 'react';
-import ArticleTeaser from '../components/ArticleTeaser/Component';
-import LoadMoreButton from '../components/LoadMoreButton/Component';
-import Toolbar from '../components/Toolbar/Component';
+import {
+  ArticleTeaser,
+  LoadMoreButton,
+  Toolbar,
+} from '../components';
+
 import styles from '../components/styles';
 
 class AppContainerWeb extends React.Component {

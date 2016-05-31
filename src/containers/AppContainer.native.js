@@ -6,10 +6,12 @@ import {
     ScrollView,
     Navigator,
 } from 'react-native';
-import ArticleTeaser from '../components/ArticleTeaser/Component';
-import Article from '../components/Article/Component';
-import LoadMoreButton from '../components/LoadMoreButton/Component';
-import Toolbar from '../components/Toolbar/Component';
+import {
+  ArticleTeaser,
+  Article,
+  LoadMoreButton,
+  Toolbar,
+} from '../components';
 
 const styles = require('../components/styles.native').styles;
 
