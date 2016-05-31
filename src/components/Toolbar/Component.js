@@ -16,7 +16,10 @@ class Toolbar extends React.Component {
   }
 
   render() {
-    const options = { styles, onClick } = this.props;
+    const options = {
+      styles: this.props.styles,
+      onClick: this.props.onClick,
+    };
 
     return Render.bind(this)(options);
   }
