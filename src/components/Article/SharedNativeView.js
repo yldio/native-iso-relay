@@ -24,15 +24,17 @@ function SharedNativeView(props) {
 }
 
 SharedNativeView.propTypes = {
-  article: React.PropTypes.shape({
-    id: React.PropTypes.string,
-    title: React.PropTypes.string,
-    author: React.PropTypes.string,
-    description: React.PropTypes.string,
-    text: React.PropTypes.string,
-    mainImage: React.PropTypes.string,
-    pubdate: React.PropTypes.string,
-  }).isRequired,
+  article: React.PropTypes.arrayOf(
+    React.PropTypes.shape({
+      id: React.PropTypes.string,
+      title: React.PropTypes.string,
+      author: React.PropTypes.string,
+      description: React.PropTypes.string,
+      text: React.PropTypes.string,
+      mainImage: React.PropTypes.string,
+      pubdate: React.PropTypes.string,
+    }).isRequired
+  ),
   styles: React.PropTypes.shape({}).isRequired,
 };
 
