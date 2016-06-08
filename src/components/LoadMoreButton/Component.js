@@ -6,6 +6,7 @@ class LoadMoreButton extends React.Component {
     onLoadMore: React.PropTypes.func.isRequired,
     styles: React.PropTypes.shape({}).isRequired,
   };
+
   constructor(props, context) {
     super(props, context);
   }

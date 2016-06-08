@@ -15,6 +15,7 @@ class ArticleTeaser extends React.Component {
     onPress: React.PropTypes.func,
     styles: React.PropTypes.shape({}).isRequired,
   };
+
   constructor(props, context) {
     super(props, context);
   }
