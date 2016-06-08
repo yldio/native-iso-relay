@@ -13,7 +13,7 @@ import AppContainerNative from './containers/AppContainer.native';
 import AppHomeRoute from './routes/AppHomeRoute';
 
 Relay.injectNetworkLayer(
-  new DefaultNetworkLayer('http://192.168.1.16:8080/graphql')
+  new DefaultNetworkLayer('http://localhost:8080/graphql')
 );
 
 export default class NewsfeedApp extends Component {
