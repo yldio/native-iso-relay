@@ -18,11 +18,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loaders: ['babel-loader'],
-        exclude: [
-          path.resolve(__dirname, "src/components/**/*.ios.js"),
-          path.resolve(__dirname, "src/components/**/*.android.js"),
-          /node_modules/
-        ]
+        exclude: [/node_modules/]
       },
     ]
   },
