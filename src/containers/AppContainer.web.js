@@ -28,6 +28,12 @@ class AppContainerWeb extends React.Component {
         ).isRequired,
       }).isRequired,
     }).isRequired,
+    relay: React.PropTypes.shape({
+      variables: React.PropTypes.shape({
+        count: React.PropTypes.number,
+      }),
+      setVariables: React.PropTypes.func,
+    }).isRequired,
   };
 
   constructor(props, context) {
