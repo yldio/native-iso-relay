@@ -12,7 +12,7 @@ Keep the Relay server running!
 
 #### Native
 
-* Start the packager with `npm start`
+* Start the packager with `npm start` (keep it running!)
 
 ##### iOS
 * `npm run ios`
