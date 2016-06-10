@@ -5,7 +5,7 @@ export class Article {}
 const newsfeed = new Newsfeed();
 newsfeed.id = 1;
 
-const defaultThumb = 'http://localhost:8080/img/possum.jpg';
+const defaultThumb = 'http://ericat.me/img/possum.jpg';
 
 const articlesJson = require('../../content/posts.json');
 const articles = articlesJson.map(item => {
