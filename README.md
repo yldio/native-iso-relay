@@ -1,4 +1,4 @@
-# native-iso-relay - WIP
+# native-isomorphic-relay
 
 You will need to setup a [ native development environment](https://facebook.github.io/react-native/docs/getting-started.html).
 
