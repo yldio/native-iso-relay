@@ -117,7 +117,7 @@ class AppContainerNative extends React.Component {
         return articleData !== undefined;
       });
       return (
-        <ScrollView>
+        <ScrollView stickyHeaderIndices={[0]}>
           <Toolbar
             onClick={this._handleClick.bind(this)}
             styles={styles}
@@ -130,7 +130,7 @@ class AppContainerNative extends React.Component {
       );
     default:
       return (
-        <ScrollView>
+        <ScrollView stickyHeaderIndices={[0]}>
           <Toolbar
             onClick={this._handleClick.bind(this)}
             styles={styles}
